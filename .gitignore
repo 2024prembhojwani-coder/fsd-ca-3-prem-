@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.log
+FSD CA3 ROLL NO 61.docx
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Test User",
+    "email": "t@c.edu",
+    "event": "Hackathon",
+    "department": "CS",
+    "year": 3,
+    "createdAt": "2026-11-15T18:48:19.303Z"
+  }
+]

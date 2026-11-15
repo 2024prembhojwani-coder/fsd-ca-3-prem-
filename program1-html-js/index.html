@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Event Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>College Event Registration</h1></header>
+  <main>
+    <section class="card">
+      <h2>Register for an Event</h2>
+      <form id="regForm" novalidate>
+        <label>Name <input id="name" type="text" placeholder="Full name" /></label>
+        <small class="err" id="nameErr"></small>
+
+        <label>Email <input id="email" type="email" placeholder="you@college.edu" /></label>
+        <small class="err" id="emailErr"></small>
+
+        <label>Event
+          <select id="event">
+            <option value="">-- Select --</option>
+            <option>Hackathon</option><option>Tech Quiz</option>
+            <option>Cultural Fest</option><option>Sports Meet</option>
+          </select>
+        </label>
+        <small class="err" id="eventErr"></small>
+
+        <label>Department
+          <select id="department">
+            <option value="">-- Select --</option>
+            <option>AI&amp;DS</option><option>CS</option><option>IT</option><option>EXTC</option>
+          </select>
+        </label>
+        <small class="err" id="departmentErr"></small>
+
+        <label>Year
+          <input id="year" type="number" min="1" max="4" placeholder="1 - 4" />
+        </label>
+        <small class="err" id="yearErr"></small>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="status" role="status"></p>
+    </section>
+
+    <section class="card">
+      <h2>Registrations</h2>
+      <div class="toolbar">
+        <input id="search" type="search" placeholder="Search by name or email..." />
+        <select id="filterEvent"><option value="">All events</option></select>
+        <button id="reload" type="button">Reload from server</button>
+      </div>
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Email</th><th>Event</th><th>Dept</th><th>Year</th><th></th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <p id="count"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

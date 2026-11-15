@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Aarav Shah", "email": "aarav@college.edu", "event": "Hackathon", "department": "AI&DS", "year": 3 },
+  { "id": 2, "name": "Diya Patil", "email": "diya@college.edu", "event": "Tech Quiz", "department": "CS", "year": 2 },
+  { "id": 3, "name": "Rohan Mehta", "email": "rohan@college.edu", "event": "Cultural Fest", "department": "IT", "year": 4 }
+]
